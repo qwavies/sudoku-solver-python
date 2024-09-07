@@ -1,3 +1,5 @@
+from solver import *
+
 board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -25,3 +27,7 @@ def print_board(board) -> None:
             else:
                 print(str(board[i][j]) + " ", end = "")
 
+print_board(board)
+solve(board)
+print("------------------------")
+print_board(board)
